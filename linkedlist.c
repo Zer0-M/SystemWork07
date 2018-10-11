@@ -25,8 +25,8 @@ struct node * free_list(struct node * ll){
     struct node *first=ll;
     while(ll!=NULL){
         free(ll);
-        ll->i=0;
         ll=ll->next; 
     }
+    first=NULL;
     return first;
 }
