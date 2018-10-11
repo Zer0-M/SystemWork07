@@ -11,7 +11,7 @@ int main(){
         printf("After %d inserted to the front of the linked list:",i);
         print_list(first);
     }
-    printf("Result from free_list:%p\n",free_list(first));
+    first=free_list(first);
      printf("Linked list after freed:");
     print_list(first);
     return 0;
