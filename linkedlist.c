@@ -16,7 +16,7 @@ void print_list(struct node *ll){
     printf("}\n");
 }
 struct node * insert_front(struct node * front, int val){
-    struct node *new = malloc(sizeof(int)+sizeof(struct node*));
+    struct node *new = malloc(sizeof(struct node));
     new->i=val;
     new->next=front;
     return new;
